@@ -34,7 +34,7 @@ A **personal MCP (Model Context Protocol) server** written in TypeScript that ex
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mcp-personal-server.git
+git clone https://github.com/sallibil-gif/mcp-personal-server.git
 cd mcp-personal-server
 npm install
 ```
