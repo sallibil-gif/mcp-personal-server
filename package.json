@@ -1,0 +1,41 @@
+{
+  "name": "mcp-personal-server",
+  "version": "1.0.0",
+  "description": "A personal MCP (Model Context Protocol) server exposing local file tools, shell commands, and prompt templates for use with Cursor, Claude Desktop, and other MCP-compatible AI clients.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-personal-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "cursor",
+    "claude",
+    "personal-tools"
+  ],
+  "license": "MIT"
+}

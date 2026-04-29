@@ -1,0 +1,12 @@
+{
+  "_comment": "Add this block to your ~/.cursor/mcp.json (merge it into the mcpServers object).",
+  "mcpServers": {
+    "mcp-personal-server": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/mcp-personal-server/dist/index.js"],
+      "env": {
+        "MY_API_KEY": "optional-secret-here"
+      }
+    }
+  }
+}
